@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>littlest wolf</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(245, 239, 249) 30.1%,
+          rgb(207, 211, 236) 100.2%
+        );
+        background-attachment: fixed;
+        text-align: center;
+      }
+      .header {
+        font-family: arial "Franklin Gothic Medium", "Arial Narrow", Arial,
+          sans-serif;
+        font-variant: small-caps;
+        padding-bottom: 15px;
+      }
+      h1 {
+        color: #081f37;
+      }
+      hr {
+        max-width: 400px;
+      }
+      h2 {
+        color: #2e79ba;
+        font-size: 20px;
+        font-weight: 100;
+      }
+      .hope-pic {
+        border-radius: 5px;
+        display: block;
+        height: 250px;
+        margin: 0 auto;
+        max-width: 600px;
+        opacity: 0.85;
+      }
+      .bio {
+        background-color: #081f37;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 450px;
+        padding: 5px 20px;
+      }
+      p {
+        color: #f2f6f7;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 150%;
+        letter-spacing: 0.6px;
+        text-align: justify;
+        text-indent: 10%;
+      }
+      button {
+        background-color: #2e79ba;
+        border: 1px;
+        border-radius: 40px;
+        box-shadow: 3px 2px 8px 0.5px #5fc9f3;
+        color: #f2f6f7;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+        margin-bottom: 20px;
+        padding: 15px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #f2f6f7;
+        color: #2e79ba;
+        cursor: pointer;
+      }
+      a {
+        color: #1e549f;
+        text-decoration: none;
+        transition: all 150ms ease-in-out;
+      }
+      a:hover {
+        color: #5fc9f3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hope Mikaelson</h1>
+      <hr />
+      <h2>The One And Only Tribrid</h2>
+    </div>
+    <img
+      class="hope-pic"
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/189/original/hope_pic.gif?1647187354"
+      alt="Hope shows her vampire eyes."
+    />
+    <div class="bio">
+      <p>
+        Hope Andrea Mikaelson was born on May 2, 2012. She is the daughter of
+        the hybrid, Klaus Mikaelson, and the Crescent Wolf Pack alpha, Hayley
+        Marshall. She attends the Salvatore Boarding School in Mystic Falls,
+        Virginia. Since she has become the Tribrid, she has been struggling with
+        the realities of her current world.
+      </p>
+      <p>
+        Hope comes from the Original family, who were the first vampires to walk
+        the Earth. She was born from a witch bloodline, through her paternal
+        grandmother, Esther, who was known as The Original Witch. Both of her
+        parents are werewolves, so she inherited the werewolf curse, which she
+        triggered in 2026. She recently completed her transition as a vampire.
+        This recent change makes her the first and only Tribrid.
+      </p>
+      <p>
+        Hope is played by Danielle Rose Russell, who reprised her role from the
+        Originals. She is one of the main female characters of the show. She is
+        caring, loyal, and intelligent. She cares and loves with her whole
+        heart, and it really shows in the show. She is my favorite character of
+        all time.
+      </p>
+    </div>
+    <button>Join Hope's Magic Class</button>
+    <br />
+    <span class="more-info">
+      <strong
+        ><a
+          href="https://vampirediaries.fandom.com/wiki/Hope_Mikaelson"
+          target="_blank"
+          >Learn more about Hope</a
+        ></strong
+      >
+      and follow Danielle:
+      <strong
+        ><a href="https://instagram.com/danielleroserussell" target="_blank"
+          >@danielleroserussell</a
+        ></strong
+      >
+    </span>
+    <br />
+    <br />
+    <span class="credit"><em>Coded by Vivian Lee</em></span>
+    <script>
+      function joinClass() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age >= 13) {
+          prompt("What is your email?");
+          alert(
+            `Thanks, ${name}. We will email you with details of the class soon!`
+          );
+        } else {
+          alert(
+            `I'm sorry, ${name}, you have to be 13 or older to join Hope's class.`
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", joinClass);
+    </script>
+  </body>
+</html>
